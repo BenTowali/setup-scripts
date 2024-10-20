@@ -41,7 +41,7 @@ doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-j
 doas pacman -S hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep --noconfirm
 
 ## Applications
-doas pacman -S steam zathura zathura-pdf-poppler mpv keepassxc obsidian gamemode fastfetch glow openssh ssh-tools lazygit meson ninja imagemagick --noconfirm
+doas pacman -S nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian gamemode fastfetch glow openssh ssh-tools lazygit meson ninja imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
@@ -57,4 +57,4 @@ doas systemctl restart libvirtd.service
 doas sysctl -w vm.max_map_count=2147483642
 
 ## AUR
-paru -S sleepy-launcher-bin selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git --noconfirm
+paru -S sleepy-launcher-bin selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha --noconfirm
