@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Prerequisites
-doas pacman -S stow rustup fzf go lf autoconf automake binutils bison debugedit fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make patch pkgconf texinfo which unzip nodejs npm pnpm unrar p7zip --noconfirm
+doas pacman -S zoxide stow rustup fzf go lf autoconf automake binutils bison debugedit fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make patch pkgconf texinfo which unzip nodejs npm pnpm unrar p7zip --noconfirm
 
 # Dotfiles
 ## Make directory where to store dotfiles
@@ -9,7 +9,7 @@ cd ~
 mkdir -p Documents/coding
 
 ## Clone repo, stow it and source the env-vars
-git clone https://gitlab.com/bentowali/dotfiles-laptop Documents/coding/dotfiles
+git clone https://github.com/bentowali/dotfiles-laptop Documents/coding/dotfiles
 cd Documents/coding/dotfiles
 stow . -t ~
 cd ~
@@ -44,7 +44,7 @@ doas pacman -S hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-porta
 doas pacman -S nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
-doas pacman -S clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
+doas pacman -S trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm

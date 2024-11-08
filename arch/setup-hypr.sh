@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Prerequisites
-doas pacman -S stow rustup fzf go lf autoconf automake binutils bison debugedit fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make patch pkgconf texinfo which unzip nodejs npm pnpm unrar p7zip --noconfirm
+doas pacman -S zoxide stow rustup fzf go lf autoconf automake binutils bison debugedit fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make patch pkgconf texinfo which unzip nodejs npm pnpm unrar p7zip --noconfirm
 
 # Dotfiles
 ## Make directory where to store dotfiles
@@ -38,10 +38,13 @@ cd .. && rm -rf paru
 doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono ttf-jetbrains-mono-nerd --noconfirm
 
 ## Hyprland
-doas pacman -S hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep --noconfirm
+doas pacman -S hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
 
 ## Applications
-doas pacman -S nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian gamemode fastfetch glow openssh ssh-tools lazygit meson ninja imagemagick --noconfirm
+doas pacman -S nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
+
+## Tools
+doas pacman -S trash-cli clang mame-tools glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
