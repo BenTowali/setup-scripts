@@ -44,13 +44,16 @@ doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprlock hyprutils xdg-des
 doas pacman -S retroarch retroarch-assets-{glui,ozone,xmb} syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
-doas pacman -S btop ani-cli tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
+doas pacman -S bluez bluez-utils bluetuith brightnessctl btop ani-cli tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
 
 # System config
 doas sysctl -w vm.max_map_count=2147483642
+## Bluetooth
+doas systemctl enable --now bluetooth.service
+doas sed -i '/AutoEnable=true/s/^#//' /etc/bluetooth/main.conf
 
 ## AUR
-paru -S selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha --noconfirm
+paru -S selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha spicetify-cli spicetify-marketplace-bin --noconfirm
