@@ -38,13 +38,13 @@ cd .. && rm -rf paru
 doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono ttf-jetbrains-mono-nerd --noconfirm
 
 ## Hyprland
-doas pacman -S hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
+doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
 
 ## Applications
-doas pacman -S nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
+doas pacman -S libgpod rbutil gst-plugins-{bad,bad-libs,base,base-libs,good,ugly} strawberry syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
-doas pacman -S trash-cli clang mame-tools glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
+doas pacman -S btop ani-cli tldr polkit polkit-kde-agent trash-cli clang mame-tools glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
@@ -60,4 +60,4 @@ doas systemctl restart libvirtd.service
 doas sysctl -w vm.max_map_count=2147483642
 
 ## AUR
-paru -S sleepy-launcher-bin selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha --noconfirm
+paru -S freac-bin sleepy-launcher-bin selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha --noconfirm
