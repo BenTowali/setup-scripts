@@ -6,12 +6,12 @@ doas pacman -S zoxide stow rustup fzf go lf autoconf automake binutils bison deb
 # Dotfiles
 ## Make directory where to store dotfiles
 cd ~
-mkdir -p Documents/coding
+mkdir -p Programmation/projects
 
 ## Clone repo, stow it and source the env-vars
-git clone https://github.com/bentowali/dotfiles-laptop Documents/coding/dotfiles
-cd Documents/coding/dotfiles
-stow . -t ~
+git clone https://github.com/bentowali/dotfiles-laptop Programmation/projects/dotfiles
+cd Programmation/projects/dotfiles
+stow . -t /home/$(whoami)
 cd ~
 source ~/.config/zsh/.zshenv
 
@@ -21,6 +21,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 # Paru (AUR Helper)
 ## Install rust
 rustup default stable
+rustup component add rust-analyzer
 
 ## Symlink doas to sudo because of makepkg
 doas ln -s $(which doas) /usr/bin/sudo
@@ -44,7 +45,7 @@ doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprlock hyprutils xdg-des
 doas pacman -S retroarch retroarch-assets-{glui,ozone,xmb} syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
-doas pacman -S bluez bluez-utils bluetuith brightnessctl btop ani-cli tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
+doas pacman -S mame-tools thunar thunar-volman gvfs bluez bluez-utils bluetuith brightnessctl btop tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
@@ -56,4 +57,4 @@ doas systemctl enable --now bluetooth.service
 doas sed -i '/AutoEnable=true/s/^#//' /etc/bluetooth/main.conf
 
 ## AUR
-paru -S selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha spicetify-cli spicetify-marketplace-bin --noconfirm
+paru -S selectdefaultapplication-fork-git ani-cli xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha spicetify-cli --noconfirm
