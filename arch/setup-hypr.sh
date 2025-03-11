@@ -39,10 +39,10 @@ cd .. && rm -rf paru
 doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono ttf-jetbrains-mono-nerd --noconfirm
 
 ## Hyprland
-doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprutils xdg-desktop-portal-hyprland wl-clipboard grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
+doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprutils xdg-desktop-portal-hyprland wl-clipboard swappy grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
 
 ## Applications
-doas pacman -S thunar thunar-volman gvfs libgpod rbutil gst-plugins-{bad,bad-libs,base,base-libs,good,ugly} strawberry syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
+doas pacman -S flatpak thunar thunar-volman gvfs gvfs-mtp libgpod rbutil gst-plugins-{bad,bad-libs,base,base-libs,good,ugly} strawberry syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
 doas pacman -S libva-nvidia-driver btop tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
