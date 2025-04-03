@@ -42,7 +42,7 @@ doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-j
 doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprlock hyprutils xdg-desktop-portal-hyprland wl-clipboard swappy grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
 
 ## Applications
-doas pacman -S flatpak retroarch retroarch-assets-{glui,ozone,xmb} syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
+doas pacman -S localsend flatpak retroarch retroarch-assets-{glui,ozone,xmb} syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
 doas pacman -S mame-tools thunar thunar-volman gvfs bluez bluez-utils bluetuith brightnessctl btop tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm

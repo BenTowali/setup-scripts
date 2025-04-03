@@ -9,7 +9,7 @@ cd ~
 mkdir -p Programmation/projects
 
 ## Clone repo, stow it and source the env-vars
-git clone https://gitlab.com/bentowali/dotfiles Programmation/projects/dotfiles
+git clone https://github.com/bentowali/dotfiles Programmation/projects/dotfiles
 cd Programmation/projects/dotfiles
 stow . -t /home/$(whoami)
 cd ~
@@ -42,10 +42,10 @@ doas pacman -S noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji ttf-j
 doas pacman -S hyprpaper hyprland hyprcursor hypridle hyprutils xdg-desktop-portal-hyprland wl-clipboard swappy grim slurp udisks2 udiskie alacritty pipewire pipewire-{pulse,alsa,jack} waybar dunst rofi-wayland pulsemixer playerctl gammastep papirus-icon-theme --noconfirm
 
 ## Applications
-doas pacman -S flatpak thunar thunar-volman gvfs gvfs-mtp libgpod rbutil gst-plugins-{bad,bad-libs,base,base-libs,good,ugly} strawberry syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
+doas pacman -S localsend flatpak thunar thunar-volman gvfs libgpod rbutil gst-plugins-{bad,bad-libs,base,base-libs,good,ugly} strawberry syncthing nsxiv nwg-look qt6ct steam zathura zathura-pdf-poppler mpv keepassxc obsidian fastfetch lazygit --noconfirm
 
 ## Tools
-doas pacman -S libva-nvidia-driver btop tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
+doas pacman -S libdvd{read,css,nav} lib32-nvidia-utils libva-nvidia-driver btop tldr polkit polkit-kde-agent trash-cli clang glow gamemode meson ninja openssh ssh-tools imagemagick --noconfirm
 
 ## Wine
 doas pacman -S wine winetricks wine-nine wine-gecko wine-mono --noconfirm
@@ -61,4 +61,4 @@ doas systemctl restart libvirtd.service
 doas sysctl -w vm.max_map_count=2147483642
 
 ## AUR
-paru -S spicetify-cli freac-bin ani-cli selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha an-anime-game-launcher-bin sleepy-launcher-bin --noconfirm
+paru -S spicetify-cli freac-bin ani-cli selectdefaultapplication-fork-git xdg-ninja spotify raindrop librewolf-bin vesktop-bin rofi-emoji-git catppuccin-gtk-theme-mocha heroic-games-launcher-bin --noconfirm
